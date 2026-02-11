@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Beiruti:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
     <!--styles-->
     <link rel="stylesheet" href="style.css">
 
@@ -156,6 +157,7 @@
                                 <option value="january">يناير</option>
                                 <option value="february">فبراير</option>
                                 <option value="march">مارس</option>
+                                <option value="april">أبريل</option>
                                 <option value="may">مايو</option>
                                 <option value="june">يونيو</option>
                                 <option value="july">يوليو</option>
@@ -183,7 +185,71 @@
         </div>
     </section>
     <!-- End Our tourism offers -->
+    <!--start Recent trips-->
+    <div class="recent-trips">
+        <div class="container">
+            <h1 class="title-head">رحلاتنا الأخيرة</h1>
+            <div class="container-images">
+                <div class="main-image">
+                    <img src="images/image trips.png"  alt="imageTrips1">
+                    <p>راحتك تبدأ من مكان إقامتك  <br>صور واقعية، تقييمات دقيقة، وحجوزات مؤكدة فورًا.</p>
+                </div>
+                <div class="small-images">
+                    <div>
+                        <img src="images/image (1)trips.png" alt="imageTrips2">
+                        <img src="images/image (2)trips.png" alt="imageTrips3">
+                    </div>
+                    <div>
+                        <img src="images/image (3) trips.png" alt="imageTrips4">
+                        <img src="images/image (4)trips.png" alt="imageTrips5">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Recent trips-->
+    <!-- Start Registration -->
+    <div class="registration">
+        <div class="container">
+            <form action="#">
+                <label for="">الاسم</label>
+                <input type="text" placeholder= "الاسم الكامل" required>
+                <div class="flex-form flex" style="gap: 40px;">
+                    <div>
+                        <label for="">البريد الإلكتروني</label>
+                        <input type="email" placeholder="عنوان البريد الالكتروني" required>
+                    </div>
+                    <div>
+                        <label for="">رقم الهاتف</label>
+                        <input type="tel" style="direction: rtl;" placeholder="رقم الهاتف" required>
+                    </div>
+                </div>
+                <label for="">الهويه</label>
+                <div class="flex"style="gap: 10px;">
+                    <label for="citizen" class="checkbox">
+                        <input type="radio" name="userType" id="citizen">
+                        <span class="radio"></span>
+                        <p>مواطن</p>
+                    </label>
+                    
 
+                    <label for="resident" class="checkbox">
+                        <input type="radio" name="userType" id="resident">
+                        <span class="radio"></span>
+                        <p>مقيم</p>
+                    </label>
+                </div>
+                <label for="">رسالة</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="رسالة"></textarea>
+                <button type="submit" class="submit">تواصل معنا</button>
+            </form>
+            <div class="image">
+                <img src="images/img form.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- End Registration -->
 
     <script src="main.js"></script>
 </body>

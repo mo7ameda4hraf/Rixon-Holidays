@@ -15,6 +15,10 @@ body{
 .active{
     display: block !important;
 }
+
+.flex{
+    display: flex;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -303,6 +307,7 @@ a{
         text-align: center;
         font-size: 51.57px;
         font-weight: 400;
+        font-family: "Aref Ruqaa", serif;
     }
 .container {
     direction: ltr;
@@ -338,11 +343,12 @@ a{
 
         .tag-note {
         position: absolute;
-        top: -5px;
+        top: -7px;
         right: 10px;
         color: white;
-        font-size: 16px;
+        font-size: 15.27px;
         font-weight: bold;
+        font-family: "Aref Ruqaa", serif;
         }
 
         .title {
@@ -352,6 +358,7 @@ a{
         color: white;
         font-size: 18px;
         font-weight: bold;
+        font-family: "Aref Ruqaa", serif;
         }
 
         &:hover .img-backGround {
@@ -370,10 +377,171 @@ a{
 }
 /* End All Offers */
 
+/* Start Recent Trips */
+.recent-trips{
+    padding-bottom: 80px;
+    .title-head{
+        position: relative;
+        text-align: center;
+        font-size: 37.22px;
+        width: fit-content;
+        font-weight: 400;
+        font-family: "Aref Ruqaa", serif;
+        margin: 40px auto;
+        &::after{
+            content: "";
+            position: absolute;
+            bottom: 18px;
+            left: -49px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: rgba(171, 85, 44, 1);
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            bottom: 18px;
+            right: -107px;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 3px;
+            background-color: rgba(171, 85, 44, 1);
+        }
+    }
+    .container-images{
+        display: flex;
+        img{
+            width: 100%;
+            object-fit: cover;
+        }
+        .main-image{
+            height: auto;
+            width: 50%;
+            position: relative;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                position: absolute;
+                bottom: 19px;
+                right: 20px;
+                color: white;
+                font-size: 24.13px;
+                line-height: 39px;
+            }
+        }
+        .small-images{
+            display: flex;
+            width: 50%;
+            div{
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+/* End Recent Trips */
+
+/* Start Registration */
+.registration{
+    padding-bottom: 80px;
+    .container{
+        box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-between;
+        form{
+            padding: 50px ;
+            width: 50%;
+            input{
+                outline: none;
+            }
+            input,textarea{
+                width: 100%;
+                padding: 12px;
+                margin-bottom: 13px;
+                margin-top: 13px;
+                border-radius: 8px;
+                border: 1px solid #ccc;
+                font-size: 16px;
+            }
+            label{
+                font-size: 16px;
+                font-weight: 700;
+            }
+            .checkbox{
+                margin: 13px 0;
+                display: flex;
+                align-items: center;
+                font-size: 22.91px;
+                font-weight: 400;
+                gap: 10px;
+                padding: 10px 20px;
+                border: 1px solid rgba(215, 218, 224, 1);
+                border-radius: 8px;
+                cursor: pointer;
+                input{
+                    display: none;
+                }
+                .radio {
+                    width: 16px;
+                    height: 16px;
+                    border: 2px solid var(--main-color);  
+                    border-radius: 50%;
+                    position: relative;
+                }
+                input:checked + .radio::after {
+                    content: "";
+                    width: 17px;
+                    height: 17px;
+                    background: var(--main-color);
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+            }
+                p{
+                    margin: 0;
+                }
+            }
+            .submit{
+                background-color: var(--main-color);
+                color: white;
+                font-size: 14px;
+                font-weight: 600;
+                border: none;
+                width: 198px;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+                padding: 12px 20px;
+                cursor: pointer;
+                &:hover {
+                    background-color: var(--hoverMain-btn);
+                    transition: 0.3s;
+                }
+            }
+        }
+        .image{
+            padding: 50px;
+            width: 43%;
+            img{
+                width: -webkit-fill-available;
+                
+            }
+        }
+    }
+}
+/* End Registration */
 
 
-
-/* PC Responsive */
+/* mobile Responsive */
 @media (max-width: 700px) {
     /* Start Header */
     .header{
@@ -408,5 +576,56 @@ a{
             grid-template-columns: repeat(2, minmax(47%, 1fr)) !important;
         }
     }
+    /* Start Recent Trips */
+    .recent-trips{
+        .title-head{
+            font-size: 26.83px !important;
+        }
+        .container-images{
+            flex-direction: column !important;
+            p{
+                font-size: 16.07px !important;
+                line-height: 28px !important;
+            }
+            .main-image,
+            .small-images{
+                width: 100% !important;
+            }
+            .small-images{
+                margin-top: -5px !important;
+            }
+        }
+    }
+    /* End Recent Trips */
+    /* Start Registration */
+    .registration{
+        .container{
+            flex-direction: column-reverse !important;
+            form, .image{
+                padding: 20px !important;
+                width: -webkit-fill-available;
+            }
+            form{
+                width: 91% !important;
+                input,textarea{
+                    width: 92% !important;
+                    margin: 8px 0 !important;
+
+                }
+                .flex-form {
+                    width: 94% !important;
+                }
+                label{
+                    font-size: 9.44px !important;
+                }
+                .checkbox{
+                    font-size: 13.51px !important;
+                    margin: 8px 0 !important;
+                }
+            }
+        }
+
+    }
+    /* End Registration */
 }
 
