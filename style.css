@@ -12,6 +12,9 @@ body{
     direction: rtl;
 }
 
+.active{
+    display: block !important;
+}
 .container {
     width: 90%;
     max-width: 1200px;
@@ -35,6 +38,12 @@ a{
             display: flex;
             align-items: center;
             justify-content: space-between;
+            .list-bar{
+                display: none;
+                color: white;
+                font-size: 24px;
+                cursor: pointer;
+            }
             ul{
                 .dropdown{
                     position: relative;
@@ -108,6 +117,102 @@ a{
             }
         }
         /* End Navpar */
+        /* Start Sidepar */
+        .sidepar{
+            padding: 20px;
+            display: none;
+            position: fixed;
+            z-index: 100;
+            right: 0;
+            top: 0;
+            gap: 10px;
+            background-color: white;
+            font-size: 14.75px;
+            font-weight: 700;
+            width: 200px;
+            height: 100vh;
+            .close-sidebar{
+                font-size: 24px;
+                color: var(--seconed-color);
+                cursor: pointer;
+                /* padding: 20px; */
+                &:hover {
+                    color: red;
+                    transition: 0.3s;
+                }
+            }
+            ul{
+                padding-right: 0;
+                .dropdown{
+                    position: relative;
+                    .drop-btn {
+                        margin-bottom: 10px;
+                        width: 100%;
+                        color: black;
+                        background:none;
+                        border: none;
+                        padding: 10px 16px;
+                        font-size: 14.75px;
+                        cursor: pointer;
+                        display: flex;
+                        justify-content: space-between ;
+                        align-items: center;
+                        gap: 8px;
+                    }
+                    .dropdown-menu {
+                        background-color: rgb(255, 255, 255);
+                        position: absolute;
+                        top: 110%;
+                        right: 0; 
+                        min-width: 180px;
+                        border-radius: 6px;
+                        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+                        overflow: hidden;
+                        opacity: 0;
+                        visibility: hidden;
+                        transform: translateY(10px);
+                        transition: 0.3s ease;
+                        z-index: 10;
+                        a {
+                            display: block;
+                            padding: 10px 14px;
+                            font-size: 14.75px;
+                            color: black;
+                            transition: 0.2s;
+                            &:hover {
+                                background: #f2f2f2;
+                            }
+                        }
+                    }
+                    &:hover .dropdown-menu {
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(0);
+                        }
+                    &:hover .drop-btn i {
+                        transform: rotate(180deg);
+                        transition: 0.3s;
+                    }
+                }
+                .communicate{
+                    background-color: var(--main-color);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    color: var(--seconed-color);
+                    font-size: 13.95px;
+                    font-weight: 700;
+                    width: 100%;
+                    border-radius: 10px;
+                    height: 35px;
+                    &:hover {
+                        background-color: var(--hoverMain-btn);
+                        transition: 0.3s;
+                    }
+                }
+            }
+        }
+        /* End Sidepar */
         /* Start Booking Form */
         .booking-form{
             width: 70%;
@@ -269,12 +374,17 @@ a{
 
 
 /* PC Responsive */
-@media (max-width: 500px) {
+@media (max-width: 700px) {
     /* Start Header */
     .header{
         padding-bottom: 100px !important;
+        .logo{
+            width: 54px !important;
+        }
         nav{
-            justify-content: center !important;
+            .list-bar{
+                display: block !important;
+            }
             ul,
             .communication-btn{
                 display: none !important;

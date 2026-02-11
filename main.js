@@ -42,3 +42,14 @@ destinations.forEach(item => {
     `;
 });
 
+// Add event listener to the Show the sidebar:
+const menuIcon = document.getElementById("menuIcon");
+const sidebar = document.getElementById("sidebar");
+const closeSidebarIcon = document.getElementById("close-sidebar");
+
+menuIcon.addEventListener("click", () => {
+    sidebar.classList.toggle("active");
+});
+closeSidebarIcon.addEventListener("click", () => {
+    sidebar.classList.remove("active");
+});
