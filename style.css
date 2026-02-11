@@ -745,6 +745,7 @@ a{
     /* End Registration */
     /* Start Footer */
     .footer{
+        padding-top: 50px;
         background: linear-gradient(
     -265deg,
     rgba(17, 147, 119, 1) 0%,
@@ -752,6 +753,9 @@ a{
     );
         .container{
             flex-direction: column !important;
+            .accounts{
+                justify-content: center !important;
+            }
         }
     }
     .end-bar{
