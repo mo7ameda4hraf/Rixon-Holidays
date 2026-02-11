@@ -1,6 +1,6 @@
 :root {
     --main-color: rgba(249, 158, 46, 1);
-    --seconed-color: rgba(15, 95, 77, 1);
+    --second-color: rgba(15, 95, 77, 1);
     --hoverMain-btn: rgb(238, 137, 14);
     --hoverSecond-btn: rgb(9, 70, 57);
 }
@@ -12,6 +12,45 @@ body{
     direction: rtl;
 }
 
+.floating-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    .whatsapp-btn,.call-btn{
+        border-radius: 50%;
+        color: white;
+        box-shadow:0 0px 14px 2px rgb(0 0 0 / 45%);
+        &:hover{
+            i{
+                transform: scale(1.02);
+            }
+        }
+        i{
+            font-size: 25px;
+        }
+    }
+    .whatsapp-btn{
+        padding: 11px 13px 10px;
+        background-color:  #25D366;
+    }
+    .call-btn{
+        padding: 13px 14px 11px;
+        background-color: #007BFF;
+        margin-top: 10px;
+        i{
+            font-size: 20px !important;
+        }
+    }
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+}
 .active{
     display: block !important;
 }
@@ -138,7 +177,7 @@ a{
             height: 100vh;
             .close-sidebar{
                 font-size: 24px;
-                color: var(--seconed-color);
+                color: var(--second-color);
                 cursor: pointer;
                 /* padding: 20px; */
                 &:hover {
@@ -204,7 +243,7 @@ a{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    color: var(--seconed-color);
+                    color: var(--second-color);
                     font-size: 13.95px;
                     font-weight: 700;
                     width: 100%;
@@ -259,7 +298,7 @@ a{
                             cursor: pointer;
                             option {
                                 color:white;
-                                background-color: var(--seconed-color);
+                                background-color: var(--second-color);
                                 font-size: 18px;
                                 font-weight: 400;
                                 &:hover {
@@ -287,7 +326,7 @@ a{
                     border: none;
                     font-size: 18.23px;
                     font-weight: 700;
-                    background-color: var(--seconed-color);
+                    background-color: var(--second-color);
                     cursor: pointer;
                     margin-right: 26px;
                     &:hover {
@@ -541,6 +580,78 @@ a{
 }
 /* End Registration */
 
+/* Start Footer */
+.footer{
+    padding: 50px 0;
+    background: linear-gradient(
+    265deg,
+    rgba(17, 147, 119, 1) 0%,
+    rgba(5, 45, 36, 1) 100%
+    );
+    .container{
+        display: flex;
+        justify-content: space-around;
+        h3{
+            color: white;
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+        .accounts{
+            gap: 15px;
+            align-items: end;
+            a{
+                border-radius: 50%;
+                border: 1px solid white;
+                width: 40px;
+                height: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                    &:hover {
+                        background-color: white;
+                        transition: 0.3s;
+                        i {
+                            color: var(--second-color);
+                            transition: 0.3s;
+                        }
+                    }
+            }
+            i{
+                color: white;
+                font-size: 18px;
+            }
+        }
+        .communication{
+            .icons{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+        .information{
+            color: white;
+            p{
+                font-size: 20.6px;
+                font-weight: 400;
+            }
+        }
+    }
+}
+/* End Footer */
+/* End bar */
+.end-bar{
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px 50px;
+    justify-content: space-between;
+    div{
+        gap: 10px;
+    }
+}
+
+
+
 
 /* mobile Responsive */
 @media (max-width: 700px) {
@@ -572,11 +683,13 @@ a{
         }
     }
     /* End Header */
+    /* Start All Offers */
     .all-offers{
         .container{
             grid-template-columns: repeat(2, minmax(47%, 1fr)) !important;
         }
     }
+    /* End All Offers */
     /* Start Recent Trips */
     .recent-trips{
         .title-head{
@@ -630,5 +743,25 @@ a{
 
     }
     /* End Registration */
+    /* Start Footer */
+    .footer{
+        background: linear-gradient(
+    -265deg,
+    rgba(17, 147, 119, 1) 0%,
+    rgba(5, 45, 36, 1) 100%
+    );
+        .container{
+            flex-direction: column !important;
+        }
+    }
+    .end-bar{
+        padding: 10px 20px !important;
+        .part2{
+            display: none !important;
+        }
+        .part1{
+            gap: 26px !important;
+        } 
+    }
 }
 

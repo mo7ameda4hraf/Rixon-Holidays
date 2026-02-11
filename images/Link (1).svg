@@ -1,0 +1,19 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_3068_9389)">
+<rect x="14" y="12" width="32" height="32" rx="16" fill="white" fill-opacity="0.01" shape-rendering="crispEdges"/>
+<rect x="14.5" y="12.5" width="31" height="31" rx="15.5" stroke="white" shape-rendering="crispEdges"/>
+<path d="M35.5508 25.9062C35.5508 26.043 35.5508 26.1523 35.5508 26.2891C35.5508 30.0898 32.6797 34.4375 27.4023 34.4375C25.7617 34.4375 24.2578 33.9727 23 33.1523C23.2188 33.1797 23.4375 33.207 23.6836 33.207C25.0234 33.207 26.2539 32.7422 27.2383 31.9766C25.9805 31.9492 24.9141 31.1289 24.5586 29.9805C24.75 30.0078 24.9141 30.0352 25.1055 30.0352C25.3516 30.0352 25.625 29.9805 25.8438 29.9258C24.5312 29.6523 23.5469 28.5039 23.5469 27.1094V27.082C23.9297 27.3008 24.3945 27.4102 24.8594 27.4375C24.0664 26.918 23.5742 26.043 23.5742 25.0586C23.5742 24.5117 23.7109 24.0195 23.957 23.6094C25.3789 25.332 27.5117 26.4805 29.8906 26.6172C29.8359 26.3984 29.8086 26.1797 29.8086 25.9609C29.8086 24.375 31.0938 23.0898 32.6797 23.0898C33.5 23.0898 34.2383 23.418 34.7852 23.9922C35.4141 23.8555 36.043 23.6094 36.5898 23.2812C36.3711 23.9648 35.9336 24.5117 35.332 24.8672C35.9062 24.8125 36.4805 24.6484 36.9727 24.4297C36.5898 25.0039 36.0977 25.4961 35.5508 25.9062Z" fill="white"/>
+</g>
+<defs>
+<filter id="filter0_d_3068_9389" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="7"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0156863 0 0 0 0 0.0235294 0 0 0 0 0.258824 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3068_9389"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3068_9389" result="shape"/>
+</filter>
+</defs>
+</svg>

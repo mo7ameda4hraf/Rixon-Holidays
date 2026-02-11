@@ -47,9 +47,21 @@ const menuIcon = document.getElementById("menuIcon");
 const sidebar = document.getElementById("sidebar");
 const closeSidebarIcon = document.getElementById("close-sidebar");
 
+const overlay = document.createElement("div");
+overlay.className = "overlay";
+
 menuIcon.addEventListener("click", () => {
     sidebar.classList.toggle("active");
+
+    if (!document.body.contains(overlay)) {
+        document.body.appendChild(overlay);
+    }
 });
-closeSidebarIcon.addEventListener("click", () => {
+
+closeSidebarIcon.addEventListener("click", closeSidebar);
+overlay.addEventListener("click", closeSidebar);
+
+function closeSidebar() {
     sidebar.classList.remove("active");
-});
+    overlay.remove();
+}
