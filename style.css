@@ -761,6 +761,9 @@ a{
         }
         .part1{
             gap: 26px !important;
+            p{
+                font-size: 13px !important;
+            }
         } 
     }
 }
