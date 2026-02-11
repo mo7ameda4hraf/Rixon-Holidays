@@ -38,7 +38,7 @@ body{
     }
     .call-btn{
         padding: 13px 14px 11px;
-        background-color: #007BFF;
+        background-color: var(--second-color);
         margin-top: 10px;
         i{
             font-size: 20px !important;
