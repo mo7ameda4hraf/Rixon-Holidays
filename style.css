@@ -397,7 +397,8 @@ a{
 
         .tag-note {
         position: absolute;
-        top: -7px;
+        top: 15px;
+        margin: 0;
         right: 20px;
         color: white;
         font-size: 15.27px;
@@ -407,7 +408,7 @@ a{
 
         .title {
         position: absolute;
-        bottom: 0;
+        bottom: -20px;
         color: white;
         font-size: 20.7px;
         font-weight: bold;
