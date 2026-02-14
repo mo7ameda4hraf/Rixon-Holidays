@@ -1,3 +1,11 @@
+@font-face {
+    font-family: "Shekari";
+    src: url("./assets/fonts/ShekariFont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --main-color: rgba(249, 158, 46, 1);
     --second-color: rgba(15, 95, 77, 1);
@@ -346,11 +354,11 @@ a{
 
 /* Start All Offers */
 .all-offers{
+    font-family: "Shekari", Arial, sans-serif;
     .title-head{
         text-align: center;
         font-size: 51.57px;
         font-weight: 400;
-        font-family: "Aref Ruqaa", serif;
     }
 .container {
     direction: ltr;
@@ -368,6 +376,9 @@ a{
         border-radius: 12px;
         overflow: hidden;
         cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
 
         .img-backGround {
         width: 100%;
@@ -379,29 +390,27 @@ a{
         .tag {
         position: absolute;
         top: 13px;
-        right: 0;
-        width: 130px;
+        right: 1px;
+        width: 100px;
         height: 27px;
         }
 
         .tag-note {
         position: absolute;
         top: -7px;
-        right: 10px;
+        right: 20px;
         color: white;
         font-size: 15.27px;
         font-weight: bold;
-        font-family: "Aref Ruqaa", serif;
+        
         }
 
         .title {
         position: absolute;
-        bottom: 10px;
-        right: 10px;
+        bottom: 0;
         color: white;
-        font-size: 18px;
+        font-size: 20.7px;
         font-weight: bold;
-        font-family: "Aref Ruqaa", serif;
         }
 
         &:hover .img-backGround {
@@ -429,7 +438,7 @@ a{
         font-size: 37.22px;
         width: fit-content;
         font-weight: 400;
-        font-family: "Aref Ruqaa", serif;
+        font-family: "Shekari", Arial, sans-serif;
         margin: 40px auto;
         &::after{
             content: "";
