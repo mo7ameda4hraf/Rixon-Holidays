@@ -661,11 +661,12 @@ a{
     /* Start Header */
     .header{
         border-radius: 0px !important;
-        padding-bottom: 100px !important;
+        padding-bottom: 70px !important;
         .logo{
-            width: 54px !important;
+            width: 70px !important;
         }
         nav{
+            justify-content: center !important;
             .list-bar{
                 display: block !important;
             }
@@ -676,7 +677,7 @@ a{
         }
         .booking-form{
             width: 90% !important;
-            margin: 100px auto 0 !important;
+            margin: 54px auto 0 !important;
             .select-custom{
                 width: 130px !important;
             }
