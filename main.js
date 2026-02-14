@@ -1,30 +1,30 @@
 
 const destinations = [
-    { title: "كروز أوروبا", img: "images/Kuroz Europe.png", tag: "" },
-    { title: "تركيا", img: "images/turkey.png", tag: "images/note.png",note:"مرشد عربي" },
-    { title: "رحلات اوروبا", img: "images/Trips to Europe.png", tag: "" },
-    { title: "روسيا", img: "images/rossia.png", tag: "images/note.png" ,note:"سائق خاص"},
-    { title: "عروض عيد الفطر", img: "images/Eid Al Fitr offers.png", tag: "" },
+    { title: "كروز أوروبا", img: "images/Kuroz Europe.webp", tag: "" },
+    { title: "تركيا", img: "images/turkey.webp", tag: "images/note.webp",note:"مرشد عربي" },
+    { title: "رحلات اوروبا", img: "images/Trips to Europe.webp", tag: "" },
+    { title: "روسيا", img: "images/rossia.webp", tag: "images/note.webp" ,note:"سائق خاص"},
+    { title: "عروض عيد الفطر", img: "images/Eid Al Fitr offers.webp", tag: "" },
 
-    { title: "اوروبا", img: "images/Europe.png", tag: "images/note.png" ,note:"مرشد عربي"},
-    { title: "شرق اسيا", img: "images/East Asia.png", tag: "images/note.png",note:"مرشد عربي" },
-    { title: "افريقيا", img: "images/Africa.png", tag: "" },
-    { title: "بولندا", img: "images/Africa.png", tag: "images/note.png",note:"سائق خاص" },
-    { title: "فيتنام", img: "images/Vietnam.png", tag: "images/note.png",note:"سائق خاص" },
+    { title: "اوروبا", img: "images/Europe.webp", tag: "images/note.webp" ,note:"مرشد عربي"},
+    { title: "شرق اسيا", img: "images/East Asia.webp", tag: "images/note.webp",note:"مرشد عربي" },
+    { title: "افريقيا", img: "images/Africa.webp", tag: "" },
+    { title: "بولندا", img: "images/Africa.webp", tag: "images/note.webp",note:"سائق خاص" },
+    { title: "فيتنام", img: "images/Vietnam.webp", tag: "images/note.webp",note:"سائق خاص" },
 
-    { title: "اسبانيا والبرتغال", img: "images/Spain and Portugal.png", tag: "" },
-    { title: "شهر العسل", img: "images/honeymoon.png", tag: "" },
-    { title: "بريطانبا", img: "images/Britain.png", tag: "" },
-    { title: "النمسا والمانيا", img: "images/Austria and Germany.png", tag: "" },
-    { title: "اوروبا الشرقيه", img: "images/Eastern Europe.png", tag: "" },
+    { title: "اسبانيا والبرتغال", img: "images/Spain and Portugal.webp", tag: "" },
+    { title: "شهر العسل", img: "images/honeymoon.webp", tag: "" },
+    { title: "بريطانبا", img: "images/Britain.webp", tag: "" },
+    { title: "النمسا والمانيا", img: "images/Austria and Germany.webp", tag: "" },
+    { title: "اوروبا الشرقيه", img: "images/Eastern Europe.webp", tag: "" },
 
-    { title: "النرويج واسكتلندا", img: "images/Norway and Scotland.png", tag: "" },
-    { title: "كوريا واليابان", img: "images/Korea and Japan.png", tag: "" },
-    { title: "أمريكا والمكسيك", img: "images/America and Mexico.png", tag: "" },
-    { title: "سويسرا وفرنسا", img: "images/Switzerland and France.png", tag: "" },
-    { title: "إيطاليا واليونان", img: "images/Italy and Greece.png", tag: "" },
+    { title: "النرويج واسكتلندا", img: "images/Norway and Scotland.webp", tag: "" },
+    { title: "كوريا واليابان", img: "images/Korea and Japan.webp", tag: "" },
+    { title: "أمريكا والمكسيك", img: "images/America and Mexico.webp", tag: "" },
+    { title: "سويسرا وفرنسا", img: "images/Switzerland and France.webp", tag: "" },
+    { title: "إيطاليا واليونان", img: "images/Italy and Greece.webp", tag: "" },
 
-    { title: "أوروبا مع سائق خاص", img: "images/Traveling with a private driver.png", tag: "" },
+    { title: "أوروبا مع سائق خاص", img: "images/Traveling with a private driver.webp", tag: "" },
 ];
 
 const destinationsGrid = document.getElementById("destinationsGrid");
