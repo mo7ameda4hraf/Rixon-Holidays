@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" developer="Mohamed Ashraf Hamza">
+<html lang="en" developer="Mohamed Ashraf Hamza" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -30,7 +30,7 @@
         </a>
     </div>
     <!-- Start Header -->
-    <div class="header">
+    <header class="header">
         <div class="container">
             <!-- Start Navbar -->
             <nav>
@@ -133,80 +133,82 @@
             </section>
             <!-- Start Booking Form -->
         </div>
-    </div>
+    </header>
     <!-- End Header -->
-    <!-- Start Our tourism offers -->
-    <section class="all-offers" id="allOffers">
-        <h1 class="title-head">عروضنا السياحية</h1>
-        <div class="container" id="destinationsGrid">
-            <!-- All Offers -->
-        </div>
-    </section>
-    <!-- End Our tourism offers -->
-    <!--start Recent trips-->
-    <div class="recent-trips">
-        <div class="container">
-            <h1 class="title-head">رحلاتنا الأخيرة</h1>
-            <section class="container-images">
-                <div class="main-image">
-                    <img src="images/image trips.webp" loading="lazy"  alt="imageTrips1">
-                    <p>راحتك تبدأ من مكان إقامتك  <br>صور واقعية، تقييمات دقيقة، وحجوزات مؤكدة فورًا.</p>
-                </div>
-                <div class="small-images">
-                    <div>
-                        <img src="images/image (1)trips.webp" loading="lazy" alt="imageTrips2">
-                        <img src="images/image (2)trips.webp" loading="lazy" alt="imageTrips3">
-                    </div>
-                    <div>
-                        <img src="images/image (3) trips.webp" loading="lazy" alt="imageTrips4">
-                        <img src="images/image (4)trips.webp" loading="lazy" alt="imageTrips5">
-                    </div>
-                </div>
-            </section>
-        </div>
-    </div>
-    <!--End Recent trips-->
-    <!-- Start Registration -->
-    <div class="registration">
-        <div class="container">
-            <form action="#">
-                <label for="">الاسم</label>
-                <input type="text" placeholder= "الاسم الكامل" required>
-                <div class="flex-form flex" style="gap: 40px;">
-                    <div>
-                        <label for="">البريد الإلكتروني</label>
-                        <input type="email" placeholder="عنوان البريد الالكتروني" required>
-                    </div>
-                    <div>
-                        <label for="">رقم الهاتف</label>
-                        <input type="tel" style="direction: rtl;" placeholder="رقم الهاتف" required>
-                    </div>
-                </div>
-                <label for="">الهويه</label>
-                <div class="flex"style="gap: 10px;">
-                    <label for="citizen" class="checkbox">
-                        <input type="radio" name="userType" id="citizen">
-                        <span class="radio"></span>
-                        <p>مواطن</p>
-                    </label>
-                    
-
-                    <label for="resident" class="checkbox">
-                        <input type="radio" name="userType" id="resident">
-                        <span class="radio"></span>
-                        <p>مقيم</p>
-                    </label>
-                </div>
-                <label for="">رسالة</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder="رسالة"></textarea>
-                <button type="submit" class="submit">تواصل معنا</button>
-            </form>
-            <div class="image">
-                <img src="images/img form.webp" loading="lazy" alt="Image Form">
+    <main>
+        <!-- Start Our tourism offers -->
+        <section class="all-offers" id="allOffers">
+            <h1 class="title-head">عروضنا السياحية</h1>
+            <div class="container" id="destinationsGrid">
+                <!-- All Offers -->
             </div>
-        </div>
-    </div>
-    <!-- End Registration -->
+        </section>
+        <!-- End Our tourism offers -->
+        <!--start Recent trips-->
+        <section class="recent-trips">
+            <div class="container">
+                <h1 class="title-head">رحلاتنا الأخيرة</h1>
+                <section class="container-images">
+                    <div class="main-image">
+                        <img src="images/image trips.webp" loading="lazy"  alt="imageTrips1">
+                        <p>راحتك تبدأ من مكان إقامتك  <br>صور واقعية، تقييمات دقيقة، وحجوزات مؤكدة فورًا.</p>
+                    </div>
+                    <div class="small-images">
+                        <div>
+                            <img src="images/image (1)trips.webp" loading="lazy" alt="imageTrips2">
+                            <img src="images/image (2)trips.webp" loading="lazy" alt="imageTrips3">
+                        </div>
+                        <div>
+                            <img src="images/image (3) trips.webp" loading="lazy" alt="imageTrips4">
+                            <img src="images/image (4)trips.webp" loading="lazy" alt="imageTrips5">
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!--End Recent trips-->
+        <!-- Start Registration -->
+        <section class="registration">
+            <div class="container">
+                <form action="#">
+                    <label for="name">الاسم</label>
+                    <input id="name" type="text" placeholder= "الاسم الكامل" required>
+                    <div class="flex-form flex" style="gap: 40px;">
+                        <div>
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" placeholder="عنوان البريد الالكتروني" required>
+                        </div>
+                        <div>
+                            <label for="tel">رقم الهاتف</label>
+                            <input type="tel" id="tel" style="direction: rtl;" placeholder="رقم الهاتف" required>
+                        </div>
+                    </div>
+                    <label for="">الهويه</label>
+                    <div class="flex"style="gap: 10px;">
+                        <label for="citizen" class="checkbox">
+                            <input type="radio" name="userType" id="citizen">
+                            <span class="radio"></span>
+                            <p>مواطن</p>
+                        </label>
+                        
+    
+                        <label for="resident" class="checkbox">
+                            <input type="radio" name="userType" id="resident">
+                            <span class="radio"></span>
+                            <p>مقيم</p>
+                        </label>
+                    </div>
+                    <label for="textarea">رسالة</label>
+                    <textarea  name="" id="textarea" cols="30" rows="10" placeholder="رسالة"></textarea>
+                    <button type="submit" class="submit">تواصل معنا</button>
+                </form>
+                <div class="image">
+                    <img src="images/img form.webp" loading="lazy" alt="Image Form">
+                </div>
+            </div>
+        </section>
+        <!-- End Registration -->
+    </main>
     <!-- Start Footer -->
     <footer class="footer">
         <div class="container">
