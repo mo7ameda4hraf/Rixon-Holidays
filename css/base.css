@@ -1,0 +1,78 @@
+@font-face {
+    font-family: "Shekari";
+    src: url("/assets/fonts/ShekariFont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --main-color: rgba(249, 158, 46, 1);
+    --second-color: rgba(15, 95, 77, 1);
+    --hoverMain-btn: rgb(238, 137, 14);
+    --hoverSecond-btn: rgb(9, 70, 57);
+}
+
+body{
+    font-family: 'Beiruti', sans-serif;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.floating-button{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    .whatsapp-btn,.call-btn{
+        border-radius: 50%;
+        color: white;
+        box-shadow:0 0px 14px 2px rgb(0 0 0 / 45%);
+        &:hover{
+            i{
+                transform: scale(1.02);
+            }
+        }
+        i{
+            font-size: 25px;
+        }
+    }
+    .whatsapp-btn{
+        padding: 11px 13px 10px;
+        background-color:  #25D366;
+    }
+    .call-btn{
+        padding: 13px 14px 11px;
+        background-color: var(--second-color);
+        margin-top: 10px;
+        i{
+            font-size: 20px !important;
+        }
+    }
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 9;
+}
+.active{
+    display: block !important;
+}
+
+.flex{
+    display: flex;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}

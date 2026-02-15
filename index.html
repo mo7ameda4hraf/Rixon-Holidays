@@ -15,7 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
 
     <!--styles-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/base.css">
 
 </head>
 <body>
@@ -33,7 +34,6 @@
         <div class="container">
             <!-- Start Navbar -->
             <nav>
-                <!-- <i class="fa-solid fa-bars list-bar" id="menuIcon"></i> -->
                 <img class="logo" src="images/logo .svg" alt="">
                 <ul>
                     <div class="dropdown">
@@ -90,61 +90,6 @@
             </nav>
             <!-- End Navbar -->
 
-            <!-- <div class="sidepar" id="sidebar">
-                <i class="fa-solid fa-xmark close-sidebar" id="close-sidebar"></i>
-                <ul>
-                    <div class="dropdown">
-                        <button class="drop-btn">
-                        الرئيسية
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-
-                        <div class="dropdown-menu">
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="drop-btn">
-                        البرامج السياحية
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-
-                        <div class="dropdown-menu">
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="drop-btn">
-                        الخدمات
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-
-                        <div class="dropdown-menu">
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        </div>
-                    </div>
-                    <div class="dropdown">
-                        <button class="drop-btn">
-                        من نحن
-                        <i class="fa-solid fa-chevron-down"></i>
-                        </button>
-
-                        <div class="dropdown-menu">
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        <a href="#">----</a>
-                        </div>
-                    </div>
-                    <a href="" class="communicate">اتصل بنا</a>
-                </ul>
-            </div> -->
-            
             <!-- Start Booking Form -->
             <section class="booking-form">
                     <form action="#">
@@ -202,22 +147,22 @@
     <div class="recent-trips">
         <div class="container">
             <h1 class="title-head">رحلاتنا الأخيرة</h1>
-            <div class="container-images">
+            <section class="container-images">
                 <div class="main-image">
-                    <img src="images/image trips.webp"  alt="imageTrips1">
+                    <img src="images/image trips.webp" loading="lazy"  alt="imageTrips1">
                     <p>راحتك تبدأ من مكان إقامتك  <br>صور واقعية، تقييمات دقيقة، وحجوزات مؤكدة فورًا.</p>
                 </div>
                 <div class="small-images">
                     <div>
-                        <img src="images/image (1)trips.webp" alt="imageTrips2">
-                        <img src="images/image (2)trips.webp" alt="imageTrips3">
+                        <img src="images/image (1)trips.webp" loading="lazy" alt="imageTrips2">
+                        <img src="images/image (2)trips.webp" loading="lazy" alt="imageTrips3">
                     </div>
                     <div>
-                        <img src="images/image (3) trips.webp" alt="imageTrips4">
-                        <img src="images/image (4)trips.webp" alt="imageTrips5">
+                        <img src="images/image (3) trips.webp" loading="lazy" alt="imageTrips4">
+                        <img src="images/image (4)trips.webp" loading="lazy" alt="imageTrips5">
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
     <!--End Recent trips-->
@@ -257,13 +202,13 @@
                 <button type="submit" class="submit">تواصل معنا</button>
             </form>
             <div class="image">
-                <img src="images/img form.webp" alt="Image Form">
+                <img src="images/img form.webp" loading="lazy" alt="Image Form">
             </div>
         </div>
     </div>
     <!-- End Registration -->
     <!-- Start Footer -->
-    <div class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="flex accounts">
                 <a href=""><i class="fa-brands fa-facebook-f"></i></a>
@@ -287,8 +232,9 @@
                 <p>فئة الترخيص / وكالة السفر والسياحة</p>
             </div>
         </div>
-    </div>
-    <div class="flex end-bar">
+    </footer>
+
+    <section class="flex end-bar">
         <div class="flex part1">
             <p>ملفات تعريف الارتباط</p>
             <p>سياسة الخصوصية</p>
@@ -301,8 +247,8 @@
                 <p>حقوق الطبع والنشر</p>
             </div>
         </div>
-    </div>
+    </section>
     <!-- End Footer -->
-    <script src="main.js"></script>
+    <script src="main.js" defer></script>
 </body>
 </html>
