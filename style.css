@@ -79,6 +79,7 @@ a{
 
 /* Start Header */
 .header{
+    /* position: relative; */
     border-radius: 50%;
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -89,6 +90,8 @@ a{
     .container{
         /* Start Navpar */
         nav{
+            position: relative;
+            z-index: 100000;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -270,6 +273,8 @@ a{
         /* End Sidepar */
         /* Start Booking Form */
         .booking-form{
+            position: relative;
+            z-index: 100000;
             width: 70%;
             margin: 108px auto 0;
             padding: 30px 20px;
@@ -350,6 +355,16 @@ a{
         /* End Booking Form */
     }
 }
+/* .header::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #00000075;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+} */
 /* End Header */
 
 /* Start All Offers */
@@ -670,6 +685,7 @@ a{
 @media (max-width: 700px) {
     /* Start Header */
     .header{
+        background-image: url(./images/backgroung-res.png) !important;
         border-radius: 0px !important;
         padding-bottom: 70px !important;
         .logo{
