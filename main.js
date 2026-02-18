@@ -34,7 +34,7 @@ destinations.forEach(item => {
     <a href="#" class="card-link">
         <div class="card">
             <img class="img-backGround" src="${item.img}" alt="${item.title}">
-            ${item.tag ? `<img class="tag" src="${item.tag}" alt="${item.tag}">` : ""}
+            ${item.tag ? `<img class="tag" src="${item.tag}" alt="${item.note}">` : ""}
             ${item.note ? `<h4 class="tag-note">${item.note}</h4>` : ""}     
             <h3 class="title">${item.title}</h3>
         </div>
